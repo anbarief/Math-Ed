@@ -1,4 +1,4 @@
-, # Math-Ed
+# Math-Ed
 
 14 January 2018,
 
