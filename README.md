@@ -23,14 +23,16 @@ Modules : `integral_1D` and `basic_statistics`
 
 The command `example1 = integral.example_linear(1, 0, [0, 1]);`  will create an object that represents the definite integral of : **f(x) = x** in the interval **[0, 1]**.
 
-* Available numerical integration method : `'trapezoid'` and `'left-rectangle'`. The default input for `method` is `'left-rectangle'`. 
-* Command `example1.numeric_result(N=100, method='trapezoid')` will print and return :
+**Calculate integral numerically using `numeric_result` method:**
+
+Available numerical integration method : `'trapezoid'` and `'left-rectangle'`. The default input for `method` is `'left-rectangle'`. 
+Command `example1.numeric_result(N=100, method='trapezoid')` will print and return :
 
 `The numeric integral (by trapezoid-method) is : 0.49005000000000004 (dx =0.01)`
 
 `0.49005000000000004`
 
-* Higher `N` will give more accurate result, for example  `example1.numeric_result(N=1000, method='trapezoid')` will print and return : 
+Higher `N` will give more accurate result, for example  `example1.numeric_result(N=1000, method='trapezoid')` will print and return : 
 
 `The numeric integral (by trapezoid-method) is : 0.49900050000000007 (dx =0.001)`
 
@@ -38,9 +40,25 @@ The command `example1 = integral.example_linear(1, 0, [0, 1]);`  will create an 
 
 which is really close to the exact integral result **0.5**.
 
-* To visualize how the integral was approximated : `example1.visual_interpret(N=10, method='trapezoid')`
 
-* Another example : `example1.visual_interpret(N=10, method='')`
+**Visualize using `visual_interpret` method**
+
+To visualize how the integral was approximated : `example1.visual_interpret(N=10, method='trapezoid')`
+
+![alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_1.png)
+
+Another example : `example1.visual_interpret(N=10, method='')`
+
+
+
+
+
+
+
+
+
+
+
 
 
 
