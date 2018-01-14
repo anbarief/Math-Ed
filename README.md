@@ -19,5 +19,40 @@ Modules : `integral_1D` and `basic_statistics`
 
 (Note: The name `integral` and `bstat` are optional, you can set `as x` or `as y` or `as anyname`)
 
-**Creating an `example_linear` object:**
+**Creating and working on an `example_linear` object:**
+
 The command `example1 = integral.example_linear(1, 0, [0, 1]);`  will create an object that represents the definite integral of : **f(x) = x** in the interval **[0, 1]**.
+
+* Available numerical integration method : `'trapezoid'` and `'left-rectangle'`. The default input for `method` is `'left-rectangle'`. 
+* Command `example1.numeric_result(N=100, method='trapezoid')` will print and return :
+
+`The numeric integral (by trapezoid-method) is : 0.49005000000000004 (dx =0.01)`
+
+`0.49005000000000004`
+
+* Higher `N` will give more accurate result, for example  `example1.numeric_result(N=1000, method='trapezoid')` will print and return : 
+
+`The numeric integral (by trapezoid-method) is : 0.49900050000000007 (dx =0.001)`
+
+`0.49900050000000007`
+
+which is really close to the exact integral result **0.5**.
+
+* To visualize how the integral was approximated : `example1.visual_interpret(N=10, method='trapezoid')`
+
+* Another example : `example1.visual_interpret(N=10, method='')`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
