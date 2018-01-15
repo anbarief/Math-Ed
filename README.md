@@ -79,7 +79,7 @@ Category :
 8. Medan
 9. Bekasi
 10. Bogor
-Number of categories : 10 </code><pre>
+Number of categories : 10 </code></pre>
 
 
 ![alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_2.png)
