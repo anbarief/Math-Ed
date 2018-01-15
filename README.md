@@ -45,7 +45,7 @@ The command `example_1 = integral.example_linear(1, 1, [-3, 3]);`  will create a
 
 `The numeric integral (by trapezoid-method) is : 51.93554999999999 (dx =0.3)`
 
-alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_1.png)
+[alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_1.png)
 
 
 
