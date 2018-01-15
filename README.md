@@ -35,7 +35,7 @@ integral.compare_visual_interpret(example = [example_1,example_2], \
                                   compare_method = ['left-rectangle', 'trapezoid']);
 </code></pre>
 
-The command `example_1 = integral.example_linear(1, 1, [-3, 3]);`  will create an object that represents the definite integral of : **f(x) = x** in the interval **[0, 1]**. The `example_2` will create an object of integral of **f(x) = x^3 + 2x^2 + x + 5** in the interval **[-3, 3]**. Method `numeric_result` will calculate each integral numerically. Available numerical integration method : `'trapezoid'` and `'left-rectangle'`. The default input for `method` is `'left-rectangle'`. `visual_interpret` will give a visualization of the integral. Result :
+The command `example_1 = integral.example_linear(1, 1, [-3, 3]);`  will create an object that represents the definite integral of : **f(x) = x+1** in the interval **[-3, 3]**. The `example_2` will create an object of integral of **f(x) = x^3 + 2x^2 + x + 5** in the interval **[-3, 3]**. Method `numeric_result` will calculate each integral numerically. Available numerical integration method : `'trapezoid'` and `'left-rectangle'`. The default input for `method` is `'left-rectangle'`. `visual_interpret` will give a visualization of the integral. Result :
 
 <pre><code> 
 The numeric integral (by left-rectangle-method) is : 5.1000000000000005 (dx =0.3)
