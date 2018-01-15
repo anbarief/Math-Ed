@@ -19,100 +19,33 @@ Modules : `integral_1D` and `basic_statistics`
 
 (Note: The name `integral` and `bstat` are optional, you can set `as x` or `as y` or `as anyname`)
 
-**Creating and working on an `example_linear` object:**
+**Example of using the `integral_1D` module**
 
-The command `example1 = integral.example_linear(1, 0, [0, 1]);`  will create an object that represents the definite integral of : **f(x) = x** in the interval **[0, 1]**.
+`import math_ed.integral_1D as integral`
 
-**Calculate integral numerically using `numeric_result` method:**
+`example_1 = integral.example_linear(1, 1, [-3, 3]);`
 
-Available numerical integration method : `'trapezoid'` and `'left-rectangle'`. The default input for `method` is `'left-rectangle'`. 
-Command `example1.numeric_result(N=100, method='trapezoid')` will print and return :
+`example_2 = integral.example_cubic([1, 2, 1, 5], [-3, 3]);`
 
-`The numeric integral (by trapezoid-method) is : 0.49005000000000004 (dx =0.01)`
+`example_1.numeric_result(N = 20);`
 
-`0.49005000000000004`
+`example_2.numeric_result(N = 20, method = 'trapezoid');`
 
-Higher `N` will give more accurate result, for example  `example1.numeric_result(N=1000, method='trapezoid')` will print and return : 
+`example_1.visual_interpret(N = 20);`
 
-`The numeric integral (by trapezoid-method) is : 0.49900050000000007 (dx =0.001)`
+`example_2.visual_interpret(N = 20, method = 'trapezoid');`
 
-`0.49900050000000007`
+`integral.compare_visual_interpret(example = [example_1,example_2], \`
+`                         N = [20, 20], \`
+`                         compare_method = ['left-rectangle', 'trapezoid']);`
 
-which is really close to the exact integral result **0.5**.
+The command `example_1 = integral.example_linear(1, 1, [-3, 3]);`  will create an object that represents the definite integral of : **f(x) = x** in the interval **[0, 1]**. The `example_2` will create an object of integral of **f(x) = x^3 + 2x^2 + x + 5** in the interval **[-3, 3]**. Method `numeric_result` will calculate each integral numerically. Available numerical integration method : `'trapezoid'` and `'left-rectangle'`. The default input for `method` is `'left-rectangle'`. `visual_interpret` will give a visualization of the integral. Result :
 
+`The numeric integral (by left-rectangle-method) is : 5.1000000000000005 (dx =0.3)`
 
-**Visualize using `visual_interpret` method**
+`The numeric integral (by trapezoid-method) is : 51.93554999999999 (dx =0.3)`
 
-To visualize how the integral was approximated : `example1.visual_interpret(N=10, method='trapezoid')`
-
-![alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_1.png)
-
-Another example : `example1.visual_interpret(N=10, method='')`
-
-![alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_2.png)
-
-**Creating and working on an `example_quadratic` object:**
-
-The command `example2 = integral.example_quadratic([1, 2, 3], [-1, 1]);`  will create an object that represents the definite integral of : **f(x) = x^2 + 2x + 3** in the interval **[-1, 1]**.
-
-**Calculate integral numerically using `numeric_result` method:**
-
-Available numerical integration method : `'trapezoid'` and `'left-rectangle'`. The default input for `method` is `'left-rectangle'`. 
-Command `example2.numeric_result(N=100)` will print and return :
-
-`The numeric integral (by left-rectangle-method) is : 6.6267999999999985 (dx =0.02)`
-
-`6.6267999999999985`
-
-which is quite close to the actual integral result **20/3** or **6.66666...**.
-
-**Visualize using `visual_interpret` method**
-
-To visualize how the integral was approximated : `example2.visual_interpret(N=10)`
-
-![alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_3.png)
-
-**Using `integral.compare_visual_interpret` to compare `visual_interpret` results**
-
-`integral.compare_visual_interpret(example1, example2, N = [10, 10], compare_method = ['trapezoid', 'trapezoid'])` will result in :
-
-![alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_4.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+alt text](https://raw.githubusercontent.com/anbarief/Math-Ed/master/example_1.png)
 
 
 
