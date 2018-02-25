@@ -2,7 +2,7 @@
 
 
 
-Author : anbarief@live.com
+
 
 This is a (*still in work*) small module with an objective of using Python in math education. This module is intended to be user-frendly for educators with minimum programming knowledge. The current focus is to use appropriate, modified, graphics to visualize math concept such as : 
 integral calculation, descriptive statistics, and many other cases. In this version, the application is limited only for :
@@ -10,6 +10,8 @@ integral calculation, descriptive statistics, and many other cases. In this vers
 2. Visualize and working on basic statistics measurement (arithmetic-mean)
 
 Modules : `integral_1D` and `basic_statistics`
+
+E-mail: anbarief@live.com
 
 **How to Start:**
 
