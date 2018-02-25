@@ -1,8 +1,8 @@
 # math-ed
 
-14 January 2018,
 
-Arief Anbiya, e-mail : anbarief@live.com
+
+Author : anbarief@live.com
 
 This is a (*still in work*) small module with an objective of using Python in math education. This module is intended to be user-frendly for educators with minimum programming knowledge. The current focus is to use appropriate, modified, graphics to visualize math concept such as : 
 integral calculation, descriptive statistics, and many other cases. In this version, the application is limited only for :
